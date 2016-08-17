@@ -1,0 +1,27 @@
+//在map中加入数组作为值，并将数组中某项满足特定条件的记录删除，再存入新纪录；
+import java.util.*;
+public class  {
+
+ public static void main(String[] args) {
+ 	 Map<String, String[]> map = new HashMap<String, String[]>();
+ 	 String a[]={"1","2","3","4"};
+ 	 String b[]={"5","6","7","8"};
+ 	 if(map.isEmpty()){map.put("q",a);}
+ 	 else{
+ 	 String k="3";
+ 	 int l=Integer.parseInt(b[0]);
+ 	 int j=Integer.parseInt(b[2]);
+ 	 for(String r : map.keySet()){
+ 	 	String[] u = map.get(r);
+ 	 	int o=Integer.parseInt(u[3]);
+ 	 	int p=Integer.parseInt(u[2]);
+ 	 	if(r.equals(k)){
+ 	     	if(o-l<2){j=p+1;}
+ 	    	map.remove(r);
+ 	 		map.put("k",b);
+ 	 	}
+ 	 }
+ 	 	System.out.print(b[0]);
+	 	}
+ }
+}
